@@ -2,15 +2,14 @@
   --blue-color: #00acdc;
 }
 
-* {
+html {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   font-size: 12px;
 }
 
 body {
   margin: 0;
+  padding: 0;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   background-color: rgb(222, 222, 222);
@@ -35,6 +34,7 @@ body {
 .nav__list {
   list-style: none;
   display: flex;
+  margin: 0;
 }
 
 .nav__list li:last-child {
@@ -55,6 +55,7 @@ body {
   height: 60px;
   align-items: center;
   display: flex;
+  justify-content: center;
 }
 
 .nav__link:hover {
@@ -97,20 +98,3 @@ body {
 .picture img {
   display: block;
 }
-
-/* header {
-  height: 60px;
-  display: flex;
-  background-color: white;
-  align-items: center;
-}
-
-
-
-nav {
-  display: inline;
-  height: 40px;
-
-  color: blue;
-}
- */
