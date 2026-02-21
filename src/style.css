@@ -8,12 +8,6 @@ html {
   padding: 0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 body {
   font-size: 12px;
   margin: 0;
@@ -48,16 +42,16 @@ body {
   justify-content: center;
 }
 
-.nav__list li:last-child {
+.nav__item {
+  margin: 0 10px;
+}
+
+.nav__item:last-child {
   margin-right: 0;
 }
 
-.nav__list li:first-child {
+.nav__item:first-child {
   margin-left: 0;
-}
-
-.nav__item {
-  margin: 0 10px;
 }
 
 .nav__link {
@@ -70,14 +64,8 @@ body {
 }
 
 .nav__link:hover {
-  text-decoration: underline 3px;
-  text-decoration-color: var(--blue-color);
   cursor: pointer;
-}
-
-.nav__link.special_hover:hover {
   color: var(--blue-color);
-  text-decoration: none;
 }
 
 .is-active {
@@ -101,11 +89,11 @@ body {
   border-radius: 2px;
 }
 
-.picture {
+.logo {
   padding-left: 50px;
   vertical-align: bottom;
 }
 
-.picture img {
+.logo__image {
   display: block;
 }
